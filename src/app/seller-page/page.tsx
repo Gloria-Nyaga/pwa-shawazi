@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
 import SideBar from '@/app/components/SideBarPwa';
+import Link from 'next/link';
 
 const Dashboard: FC = () => {
   return (
@@ -43,15 +44,24 @@ const Dashboard: FC = () => {
           />
           <p className="text-black-600 px-[350px] ml-80 text-[20px] mb-18">Let&apos;s start, you have no new notifications</p>
           <div className="grid grid-cols-3 gap-8 mb-8 h-[170px] w-[700px] ml-72 mt-96">
-            <button className="bg-yellow-500 text-white py-4 rounded-md shadow-lg">
-              Upload land documents
-            </button>
-            <button className="bg-yellow-500 text-white py-4 rounded-md shadow-lg mt-10">
-              Go to chats
-            </button>
-            <button className="bg-yellow-500 text-white py-4 rounded-md shadow-lg ml-8">
-              Upload receipt of payment
-            </button>
+            <Link href="/agreementNext">
+              <button className="bg-yellow-500 text-white py-4 rounded-md shadow-lg">
+                View agreements documents
+              </button>
+            </Link>
+
+            <Link href="/chatroom-page" >
+              <button className="bg-yellow-500 text-white py-4 rounded-md shadow-lg mt-10">
+                Go to chats
+              </button>
+            </Link>
+
+            <Link href="/transactions">
+              <button className="bg-yellow-500 text-white py-4 rounded-md shadow-lg ml-8">
+                Upload receipt of payment
+              </button>
+            </Link>
+
           </div>
           <div className="bg-white rounded-lg shadow-lg p-6">
             <table className="min-w-full table-auto">

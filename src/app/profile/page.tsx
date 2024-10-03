@@ -1,5 +1,6 @@
 
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { getCookie, setCookie } from "cookies-next";
 import { FaEdit, FaPhoneAlt, FaUserTie } from "react-icons/fa";
