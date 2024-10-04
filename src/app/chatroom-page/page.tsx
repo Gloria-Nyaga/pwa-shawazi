@@ -40,4 +40,8 @@ const ChatRoom = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ChatRoom;
+=======
+export default ChatRoom;
+>>>>>>> 5a12f1e5be200dcdafcc2a47a99431b86b63b17a
